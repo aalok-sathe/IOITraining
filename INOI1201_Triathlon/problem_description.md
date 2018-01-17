@@ -6,52 +6,24 @@ The event works as follows. The Supreme Leader fixes the order in which contesta
 
 For example, suppose N = 3, and the time they need for the three tracks are as follows:
 
-Citizen id
-	
+Citizen id, COBOL, Pole vault, Doughnut-eating
 
-COBOL
-	
-
-Pole vault
-	
-
-Doughnut-eating
-
-1
-	
-
-18
-	
-
-7
-	
-
+1,
+18,
+7,
 6
 
-2
-	
-
-23
-	
-
-10
-	
-
+2,
+23,
+10,
 27
 
-3
-	
-
-20
-	
-
-9
-	
-
+3,
+20,
+9,
 14
 
  
-
 If the citizens start at time 0 and proceed in the order 1,2,3, then citizen 1 will finish at time 18+7+6 = 31, citizen 2 will finish at time 18+23+10+27 = 78, and citizen 3 will finishattime18+23+20+9+14=84. Theeventendsattimemax(31,78,84)=84.
 
 On the other hand, if the citizens proceed in the order 2,3,1, you can check that the event ends at max(60, 66, 74) = 74. The Supreme Leader of Tutaria wants to fix the order in which the citizens proceed so that the event ends as early as possible. You can check that in this case 74 is the earliest time at which the event can end.
