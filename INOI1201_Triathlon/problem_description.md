@@ -31,10 +31,12 @@ On the other hand, if the citizens proceed in the order 2,3,1, you can check tha
 Input format
 
 The first line of input has a single integer, N, the number of citizens of the Republic of Tutaria. The next N lines contain 3 space-separated integers each: line i gives the time taken by the citizen i for COBOL programming, pole vault, and doughnut-eating respectively.
-Output format
+
+**Output format**
 
 The output should have a single line with a single integer, the earliest time at which the event can end.
-Test Data
+
+**Test Data**
 
 The testdata is grouped into two subtasks with the following constraints on the inputs.
 
@@ -46,19 +48,20 @@ In both the subtasks, all the numbers in the input (except possibly N) are in th
 Example
 
 Here is the sample input and output corresponding to the example above.
-Sample input
+
+**Sample input**
 
 3
 18 7 6 
 23 10 27
 20 9 14
 
-Sample output
+**Sample output**
 
 74
 
 
-Note:
+_Note:_
 Your program should not print anything other than what is specified in the output format. Please remove all diagnostic print statements before making your final submission. A program with extraneous output will be treated as incorrect!
 
 source: codechef.com
