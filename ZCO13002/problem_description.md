@@ -18,27 +18,39 @@ As an example consider the following grid:
 Suppose there are 3 magic charms, at position (1,2) with strength 2, at position (4,5) with strength 2 and one at position (4,2) with strength 1. The positions within the zone of influence of these three charms are indicated in the three grids below using X's.
 
 X  X  X  X  .         .  .  .  .  .         .  .  .  .  .
+
 X  X  X  .  .         .  .  .  .  X         .  .  .  .  .
+
 .  X  .  .  .         .  .  .  X  X         .  X  .  .  .
+
 .  .  .  .  .         .  .  X  X  X         X  X  X  .  .
+
 .  .  .  .  .         .  .  .  X  X         .  X  .  .  .
 
 
 Putting these together, the cells that are under the zone of influence of at least one charm are marked with X below.
 
 X  X  X  X  .
+
 X  X  X  .  X
+
 .  X  .  X  X
+
 X  X  X  X  X
+
 .  X  .  X  X
 
 
 Here are two examples of safe paths in this grid, marked using Y's.
 
 Y  Y  X  X  .          Y  X  X  X  .
+
 X  Y  X  .  X          Y  Y  X  .  X
+
 .  Y  .  X  X          .  Y  .  X  X
+
 X  Y  Y  Y  Y          X  Y  Y  Y  X
+
 .  X  .  X  Y          .  X  .  Y  Y
 
 
@@ -61,19 +73,28 @@ The first line of output must either consist of the word YES, if there are safe 
 Sample Input
 
 5 3
+
 3 3 2 4 3 
+
 2 1 -1 -2 2  
+
 -1 2 4 3 -3  
+
 -2 2 3 2 1  
+
 3 -1 2 -1 2  
+
 1 2 2
+
 4 5 2
+
 4 2 1
 
 
 Sample Output
 
 YES
+
 19
 
 
@@ -86,8 +107,10 @@ Let K denote the maximum strength among all the magic charms.
     Subtask 1 (30 marks) : 1 ≤ M ≤ 10, 1 ≤ K ≤ 1,000.
     Subtask 2 (70 marks) : 1 ≤ M ≤ 10,000, 1 ≤ K ≤ 10.
 
-
 Live evaluation data
 
     Subtask 1: Testcases 0,1,2,3,4.
     Subtask 2: Testcases 5,6,7,8.
+
+source: codechef.com
+keywords: dynamic_programming, computational_geometry
